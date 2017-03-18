@@ -14,5 +14,5 @@ ls -ltr data/get/$domain/pages
 echo continue rsync to $to?
 rsync -a data/get/$domain $to:.wiki/
 ssh $to "chown -R root:root .wiki/$domain; ls -ltr .wiki/$domain/pages"
-echo update dns
-echo sh got.sh
+echo now: update dns, claim new site
+echo later: sh got.sh
